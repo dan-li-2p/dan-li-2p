@@ -77,6 +77,8 @@
 
 - Static Web Apps にデプロイするには SPA モードが必須
 - `nuxt.config.ts` に `ssr: false` を追加する
+  - デフォルトの SSR モードでは CI 中にもデータを取ってレンダリングまで行おうとする
+  - 認証が必要な場合は SSR を使うことは難しい（実質無理）
 
 ### ✅ Codespaces に GitHub Copilot をインストール
 
