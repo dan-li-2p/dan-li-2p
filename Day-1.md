@@ -104,6 +104,11 @@
 - Static Web App を作成
   - API リンクを使うので Standard が必須
   - GitHub リポジトリを選択するためにログインを行う
+  - リポジトリを選択し、ビルド設定を行う
+- SWA のリソースを作成すると、GitHub 側に yml ファイルが作成される
+  - yml は GitHub Actions の定義ファイルで、ビルドなどの処理が定義されている
+  - 自動生成された yml では `npm run generate` が使われていないので修正が必要
+  - Node.js バージョンも古いので修正する
 
 ### ✅ UI ライブラリの選定
 
@@ -132,3 +137,4 @@
 - [Rendering Modes · Nuxt Concepts](https://nuxt.com/docs/guide/concepts/rendering)
 - [Nuxt UI: A UI Library for Modern Web Apps](https://ui.nuxt.com/)
 - [IntelliSense - Installation - Nuxt UI](https://ui.nuxt.com/getting-started/installation#intellisense)
+- [GitHub Actions ドキュメント - GitHub Docs](https://docs.github.com/ja/actions)
