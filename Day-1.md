@@ -109,6 +109,8 @@
   - yml は GitHub Actions の定義ファイルで、ビルドなどの処理が定義されている
   - 自動生成された yml では `npm run generate` が使われていないので修正が必要
   - Node.js バージョンも古いので修正する
+- SPA として動作させるために `staticwebapp.config.json` を追加
+  - `navigationFallback` を設定し、存在しないパスへのリクエスト時にも `index.html` を返す
 
 ### ✅ UI ライブラリの選定
 
@@ -138,3 +140,4 @@
 - [Nuxt UI: A UI Library for Modern Web Apps](https://ui.nuxt.com/)
 - [IntelliSense - Installation - Nuxt UI](https://ui.nuxt.com/getting-started/installation#intellisense)
 - [GitHub Actions ドキュメント - GitHub Docs](https://docs.github.com/ja/actions)
+- [フォールバック ルート - Azure Static Web Apps を構成する | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/configuration#fallback-routes)
