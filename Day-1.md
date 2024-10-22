@@ -120,7 +120,10 @@
   - 作成したファイルのルートに `<template>` タグを追加
   - 更に `<template>` タグの中に `<div>` と `<UButton>` タグを追加
 - データモデルの仕様を検討
-  - 工程毎にオブジェクトを定義するかどうか検討
+  - 工程毎にオブジェクトを定義する
+  - ステータス、最終更新日、最終更新者は全ての工程で必須
+- 固定のデータを定義してレンダリングの処理を定義
+  - Tailwind を使ってパディングなどを実装
 
 ## 参考ドキュメント
 
@@ -128,3 +131,4 @@
 - [開発コンテナーの概要 - GitHub Docs](https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 - [Rendering Modes · Nuxt Concepts](https://nuxt.com/docs/guide/concepts/rendering)
 - [Nuxt UI: A UI Library for Modern Web Apps](https://ui.nuxt.com/)
+- [IntelliSense - Installation - Nuxt UI](https://ui.nuxt.com/getting-started/installation#intellisense)
