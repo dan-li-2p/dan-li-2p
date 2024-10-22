@@ -73,6 +73,11 @@
   - ESLint Config Inspector を使うと現在のルールや適用されているルールを確認できる
   - Payload を使うと、サーバーからダウンロードしたデータを Key-Value 形式で確認できる
 
+### ✅ Nuxt のモードを SPA に変更する
+
+- Static Web Apps にデプロイするには SPA モードが必須
+- `nuxt.config.ts` に `ssr: false` を追加する
+
 ### ✅ Codespaces に GitHub Copilot をインストール
 
 - Codespaces サイドバーの拡張機能から Copilot を検索
