@@ -69,6 +69,7 @@
   - WebSocket が必要になるのでネットワークの制限によっては動作しない
   - 可能な限り VS Code Desktop で開くことをお勧め
 - Nuxt DevTools を使うと現在のページ、コンポーネントの状態を確認できる
+  - 初回起動時に Authorize が必要になるため、デバッグコンソールに表示されたトークンをコピーして入力
   - コンポーネントの `props` を確認できるのはデバッグ時に非常に便利、お勧め
   - ESLint Config Inspector を使うと現在のルールや適用されているルールを確認できる
   - Payload を使うと、サーバーからダウンロードしたデータを Key-Value 形式で確認できる
@@ -110,8 +111,20 @@
   - Pro を利用するかどうかは要検討
   - 今回の画面構成では必要ない可能性が高い
 
+### ✅ 手順書詳細のページを実装する
+
+- Nuxt UI を nuxi を使ってインストールする
+  - `npm nuxi@3.13.2 module add ui` を実行
+  - `nuxt.config.ts` に `@nuxt/ui` が追加されていることを確認
+- `pages` ディレクトリの中に `procedures/[id].vue` ファイルを作成
+  - 作成したファイルのルートに `<template>` タグを追加
+  - 更に `<template>` タグの中に `<div>` と `<UButton>` タグを追加
+- データモデルの仕様を検討
+  - 工程毎にオブジェクトを定義するかどうか検討
+
 ## 参考ドキュメント
 
 - [Nuxt: The Intuitive Vue Framework · Nuxt](https://nuxt.com/)
 - [開発コンテナーの概要 - GitHub Docs](https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 - [Rendering Modes · Nuxt Concepts](https://nuxt.com/docs/guide/concepts/rendering)
+- [Nuxt UI: A UI Library for Modern Web Apps](https://ui.nuxt.com/)
