@@ -8,3 +8,19 @@
 ## 🎯️ ゴール
 
 - ASP.NET MVC で構成されている既存システムのカスタマイズ版を Nuxt/Vue で Azure 上に構築
+
+## 💭 ディスカッション
+
+- 3 月のリリースに向けての疑問点の解消を最優先にする
+  - Nuxt を使って開発する
+- Day 1 は Nuxt の基本的な開発、デプロイを目標とする
+- Day 2 ではデータストアを RDB から NoSQL に出来ないかを検討する（予定）
+
+## 🔖 作業ログ
+
+### ✅ Nuxt の開発環境を構築
+
+- GitHub Codespaces を利用して Nuxt + Vue の環境を立ち上げる
+  - VS Code の拡張機能（ESLint / Volar など）が必須
+  - 定義済みの Dev Container 定義を利用する
+- `.devcontainer` ディレクトリ以下に `devcontainer.json` を作成して定義を置いておく
