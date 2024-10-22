@@ -152,6 +152,15 @@
 - SPA からアクセスできるように CORS の設定を追加
   - 許可されたオリジン、ヘッダーには `*` を設定
 
+### ✅ Nuxt コンポーネントから HTTP でデータを取得
+
+- `useFetch` を使って指定された URL からデータをダウンロードする
+  - [useFetch · Nuxt Composables](https://nuxt.com/docs/api/composables/use-fetch)
+- 実際に `useFetch` でダウンロードされたデータは Nuxt DevTools の Payload で確認できる
+- `useFetch` でダウンロードしたデータの型を明記して警告を消す
+  - `type` キーワードで型を定義する
+  - `useFetch` の型パラメータとして定義した型を渡す
+
 ## 参考ドキュメント
 
 - [Nuxt: The Intuitive Vue Framework · Nuxt](https://nuxt.com/)
