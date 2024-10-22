@@ -111,6 +111,8 @@
   - Node.js バージョンも古いので修正する
 - SPA として動作させるために `staticwebapp.config.json` を追加
   - `navigationFallback` を設定し、存在しないパスへのリクエスト時にも `index.html` を返す
+- Pull Request を作成して、プレビュー環境でレビュー
+  - ブランチを切って開発をするとレビュー中に変更点を確認しやすくなる
 
 ### ✅ UI ライブラリの選定
 
@@ -141,3 +143,4 @@
 - [IntelliSense - Installation - Nuxt UI](https://ui.nuxt.com/getting-started/installation#intellisense)
 - [GitHub Actions ドキュメント - GitHub Docs](https://docs.github.com/ja/actions)
 - [フォールバック ルート - Azure Static Web Apps を構成する | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/configuration#fallback-routes)
+- [Azure Static Web Apps で環境をプレビューする | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/preview-environments)
