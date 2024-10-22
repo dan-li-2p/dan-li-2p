@@ -33,7 +33,17 @@
   - ローカルに VS Code のインストールが必須
 - Nuxt のインストールを実行する
   - [Installation · Get Started with Nuxt](https://nuxt.com/docs/getting-started/installation) のコマンドを実行
-  - `frontend` というディレクトリを切ってプロジェクトを作成する
+  - `frontend` というディレクトリを切ってプロジェクトを作成
+  - パッケージマネージャは `npm` を選択するとボイラープレートが作成される
+  - 初回は `npm install` が実行されるので時間がかかる
+- インストールの実行後
+
+### ✅ Codespaces に GitHub Copilot をインストール
+
+- Codespaces サイドバーの拡張機能から Copilot を検索
+  - `GitHub Copilot` を選択してインストール
+- インストールした GitHub Copilot 拡張を `devcontainer.json` に追加
+  - 右クリックメニューにある `Add devcontainer.json` を選択する
 
 ## 参考ドキュメント
 
