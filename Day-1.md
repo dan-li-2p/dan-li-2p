@@ -98,3 +98,4 @@
 
 - [Nuxt: The Intuitive Vue Framework · Nuxt](https://nuxt.com/)
 - [開発コンテナーの概要 - GitHub Docs](https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
+- [Rendering Modes · Nuxt Concepts](https://nuxt.com/docs/guide/concepts/rendering)
