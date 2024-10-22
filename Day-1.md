@@ -71,6 +71,7 @@
 - Nuxt DevTools を使うと現在のページ、コンポーネントの状態を確認できる
   - コンポーネントの `props` を確認できるのはデバッグ時に非常に便利、お勧め
   - ESLint Config Inspector を使うと現在のルールや適用されているルールを確認できる
+  - Payload を使うと、サーバーからダウンロードしたデータを Key-Value 形式で確認できる
 
 ### ✅ Codespaces に GitHub Copilot をインストール
 
