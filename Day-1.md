@@ -50,6 +50,24 @@
   - `editor.formatOnSave` キーを追加
   - ESLint を使ってフォーマットを行う設定が追加されている
   - 設定後には保存時に ESLint がフォーマットを行ってくれる
+- ターミナルで `npm run dev` を実行してローカルで Nuxt を起動
+  - コマンドを実行するとサーバーが立ち上がるので、ブラウザでアクセスする
+  - Codespaces の通知が表示されるため、そこからブラウザーで開くを選択すると簡単に表示できる
+  - "Welcome to Nuxt" のページが表示されていれば成功
+  - `App.vue` にページの実体が存在している
+
+### ✅ Nuxt に新しいページを追加する
+
+- `frontend` ディレクトリの直下に `pages` ディレクトリを作成
+- `pages` ディレクトリに `index.vue` ファイルを作成
+  - `<template>` タグを追加して、その中に更に適当に `<div>` タグなどを追加する
+  - 保存するとホットリロードで自動的に反映される
+- `App.vue` ファイルを修正して、ページを読み込むようにする
+  - `<div>` の中に存在しているデフォルト定義を全て削除し、`<NuxtPage />` タグを追加
+  - ホットリロード後にページの再読み込みを行うと `index.vue` が表示される
+- ページの下側に表示されている Nuxt のアイコンを選択すると Nuxt Dev Tools が起動する
+  - WebSocket が必要になるのでネットワークの制限によっては動作しない
+  - 可能な限り VS Code Desktop で開くことをお勧め
 
 ### ✅ Codespaces に GitHub Copilot をインストール
 
@@ -57,6 +75,13 @@
   - `GitHub Copilot` を選択してインストール
 - インストールした GitHub Copilot 拡張を `devcontainer.json` に追加
   - 右クリックメニューにある `Add devcontainer.json` を選択する
+
+### ✅ VS Code Desktop で Codespaces を開く
+
+- VS Code Desktop を立ち上げて、Codespaces 拡張機能をインストールする
+- サイドバーに増えた Remote Development を開いて GitHub へログイン
+  - ブラウザが立ち上がって許可が求められるので、緑色のボタンを押して許可
+- ログインが完了すると起動中 Codespaces の一覧が表示されるので、🔌 アイコンをクリックして接続
 
 ## 参考ドキュメント
 
