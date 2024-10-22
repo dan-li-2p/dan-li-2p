@@ -94,6 +94,16 @@
   - ブラウザが立ち上がって許可が求められるので、緑色のボタンを押して許可
 - ログインが完了すると起動中 Codespaces の一覧が表示されるので、🔌 アイコンをクリックして接続
 
+### ✅ Azure にリソースを作成
+
+- サブスクリプションにリソースプロバイダーが登録されているか確認
+  - `Microsoft.Web` と `Microsoft.Storage` の 2 つを登録
+- リソースグループを最初に作成
+  - リージョンは基本 `Japan East` を選択
+- Static Web App を作成
+  - API リンクを使うので Standard が必須
+  - GitHub リポジトリを選択するためにログインを行う
+
 ## 参考ドキュメント
 
 - [Nuxt: The Intuitive Vue Framework · Nuxt](https://nuxt.com/)
