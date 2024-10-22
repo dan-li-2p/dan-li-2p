@@ -24,3 +24,18 @@
   - VS Code の拡張機能（ESLint / Volar など）が必須
   - 定義済みの Dev Container 定義を利用する
 - `.devcontainer` ディレクトリ以下に `devcontainer.json` を作成して定義を置いておく
+  - プロジェクト全体で利用するフォーマット、規約を強制できる
+  - `devcontainer.json` をコミット、プッシュしてから開き直す
+- "New with options..." を選択して、作成した Dev Container 定義（Node.js 20）が選ばれていることを確認
+  - Machine type を 4-core に変更
+- ブラウザ上で開発するだけではなく、ローカルにインストールされた VS Code で開くこともできる
+  - Codespaces のハンバーガーメニューから "Open in VS Code Desktop" を選択
+  - ローカルに VS Code のインストールが必須
+- Nuxt のインストールを実行する
+  - [Installation · Get Started with Nuxt](https://nuxt.com/docs/getting-started/installation) のコマンドを実行
+  - `frontend` というディレクトリを切ってプロジェクトを作成する
+
+## 参考ドキュメント
+
+- [Nuxt: The Intuitive Vue Framework · Nuxt](https://nuxt.com/)
+- [開発コンテナーの概要 - GitHub Docs](https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
