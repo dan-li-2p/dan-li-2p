@@ -9,10 +9,11 @@
 
 - [ ] Static Web Apps の Easy Auth 設定 (Entra ID)
 - [ ] procedure.json の拡充
+- [ ] バックエンドで認証情報が取れることの確認・Static Web Apps バックエンドリンク
 
 ## アジェンダ
 
 - [ ] フォーム画面実装
-- [ ] バックエンド実装 (ストレージから JSON を取得して返す)
-- [ ] Static Web Apps バックエンドリンク
+- [ ] 開発環境について (アクセス制限等)
+- [ ] ステージングスロットについて
 - [ ] [Optional] データ設計のディスカッション
