@@ -36,7 +36,20 @@
   - `frontend` というディレクトリを切ってプロジェクトを作成
   - パッケージマネージャは `npm` を選択するとボイラープレートが作成される
   - 初回は `npm install` が実行されるので時間がかかる
-- インストールの実行後
+- Nuxt ESLint をインストールする
+  - [ESLint - Code Style · Nuxt Concepts](https://nuxt.com/docs/guide/concepts/code-style#eslint)
+  - 最新の nuxi にバグがあるため `npx nuxi@3.13.2 module add eslint` を実行
+  - 実行後 `nuxt.config.ts` に `@nuxt/eslint` が追加されていることを確認
+- ESLint の追加設定を行う
+  - `nuxt.config.ts` で `eslint` のオプションを追加
+  - `eslint` => `config` 以下に `stylistic: true` を追加
+- VS Code 上での Nuxt の type error を修正する
+  - `npx nuxt prepare` を実行すると型情報が再生成されてエラーが消える
+- ファイル保存時に自動的に整形する設定を追加
+  - `.vscode` ディレクトリをルートに作成し、中に `settings.json` ファイルを作成
+  - `editor.formatOnSave` キーを追加
+  - ESLint を使ってフォーマットを行う設定が追加されている
+  - 設定後には保存時に ESLint がフォーマットを行ってくれる
 
 ### ✅ Codespaces に GitHub Copilot をインストール
 
