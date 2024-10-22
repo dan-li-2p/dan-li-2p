@@ -104,6 +104,12 @@
   - API リンクを使うので Standard が必須
   - GitHub リポジトリを選択するためにログインを行う
 
+### ✅ UI ライブラリの選定
+
+- RXC と合わせる形で Nuxt UI (Tailwind ベース) を選定
+  - Pro を利用するかどうかは要検討
+  - 今回の画面構成では必要ない可能性が高い
+
 ## 参考ドキュメント
 
 - [Nuxt: The Intuitive Vue Framework · Nuxt](https://nuxt.com/)
