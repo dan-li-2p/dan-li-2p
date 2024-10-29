@@ -173,6 +173,16 @@ SWA CLI を Codespace にインストール
 - コンテナをリビルド後、VS Code ターミナルで dotnet コマンドが実行できることを確認
 - backend ディレクトリを追加し、`dotnet new webapi` コマンドを実行し Web API ボイラープレートコードを生成
 - `dotnet run` コマンドでローカル起動し、`/weatherforecast` エンドポイントにアクセスできることを確認
+- `/weatherforecast` の path を `/api/weatherforecast` に変更しておく
+
+SWA CLI でフロントエンド・バックエンドをローカル起動
+
+- `dotnet run` コマンドでバックエンドを起動しておく
+- `swa init` コマンドで SWA CLI 用の設定ファイル (swa-cli.config.json) を生成
+  - appDevserverUrl のポートを Nuxt Dev サーバーのポート (3000) に変更
+  - appApiserverUrl に .NET バックエンドの URL を設定
+- `swa start` コマンドで 4280 ポートが起動し、認証エミュレーターの画面が開くことを確認
+- 適当な Username を入力してログインすると、`<SWA CLI エミュレータのオリジン>/api/weatherforecast` にアクセスできることを確認
 
 ## 参考ドキュメント
 
