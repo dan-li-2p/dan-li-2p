@@ -90,7 +90,7 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
   - リソース名で バックエンド API の App Service リソースを選択
 - App Service (バックエンド API) の URL にブラウザからアクセスすると期待通り 400 エラーになることを確認
 
-### ✅ Nuxt の Q&A
+### ✅ Nuxt に関する Q&A
 
 - 詳細と一覧を実装
   - Nuxt UI を使ってコンポーネントを実装
@@ -98,7 +98,8 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 - フッターの扱いが難しい
   - Flex を使うと綺麗に作れる
   - Tailwind CSS のプリセットを使っても作れる
-- SPA ではリダイレクトは難しい
+- トップページにアクセスした場合に一覧にリダイレクトしたい
+  - SPA ではリダイレクトは難しい
   - Nuxt のミドルウェアを使うとページ表示前に処理を追加できる
 - Nuxt コンポーネントのカスタマイズ
   - `ui` prop にオブジェクトを渡すことでオーバーライドが可能
@@ -108,8 +109,15 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
   - 利用する Icon Set のみインストールするようにするとバンドルサイズを削減できる
   - 色を変えるのは `UIcon` の `class` で変更
   - Vue の場合は `:class` を使うと動的にバインディング可能
+- Nuxt のミドルウェアを利用してリダイレクトを行う
+  - `middleware` ディレクトリを作成する
+  - 強制的にリダイレクトを行うミドルウェアを作成
+  - 該当のページで `definePageMeta` を使って利用するミドルウェアを参照する
 
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
 - [アプリを Azure 仮想ネットワークと統合する - Azure App Service | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/app-service/overview-vnet-integration)
+- [middleware/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/middleware)
+- [Icon - Nuxt UI](https://ui.nuxt.com/components/icon)
+- [Config | Card - Nuxt UI](https://ui.nuxt.com/components/card#config)
