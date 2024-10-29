@@ -180,7 +180,7 @@ SWA CLI でフロントエンド・バックエンドをローカル起動
 - `dotnet run` コマンドでバックエンドを起動しておく
 - `swa init` コマンドで SWA CLI 用の設定ファイル (swa-cli.config.json) を生成
   - appDevserverUrl のポートを Nuxt Dev サーバーのポート (3000) に変更
-  - appApiserverUrl に .NET バックエンドの URL を設定
+  - apiDevserverUrl に .NET バックエンドの URL を設定
 - `swa start` コマンドで 4280 ポートが起動し、認証エミュレーターの画面が開くことを確認
 - 適当な Username を入力してログインすると、`<SWA CLI エミュレータのオリジン>/api/weatherforecast` にアクセスできることを確認
 
