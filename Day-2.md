@@ -222,3 +222,7 @@ SWA CLI でフロントエンド・バックエンドをローカル起動
 - [独自のバックエンドとリンクした Azure Static Web Apps のプレビュー環境を自動で作成する - しばやん雑記](https://blog.shibayan.jp/entry/20240302/1709354966)
 - [Static Web Apps CLI Documentation | Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/)
 - [Azure Static Web Apps でのユーザー情報へのアクセス | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/user-information)
+
+## ホワイトボードログ
+
+![IMG_2415](https://github.com/user-attachments/assets/0b0d968c-819c-43b9-b2db-5f5865b21961)
