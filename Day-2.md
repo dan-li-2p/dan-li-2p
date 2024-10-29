@@ -90,6 +90,20 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
   - リソース名で バックエンド API の App Service リソースを選択
 - App Service (バックエンド API) の URL にブラウザからアクセスすると期待通り 400 エラーになることを確認
 
+### ✅ Nuxt
+
+- 詳細と一覧を実装
+  - Nuxt UI を使ってコンポーネントを実装
+  - 表示用の JSON を利用して表示している
+- フッターの扱いが難しい
+  - Flex を使うと綺麗に作れる
+  - Tailwind CSS のプリセットを使っても作れる
+- SPA ではリダイレクトは難しい
+  - Nuxt のミドルウェアを使うとページ表示前に処理を追加できる
+- Nuxt コンポーネントのカスタマイズ
+  - `ui` prop にオブジェクトを渡すことでオーバーライドが可能
+  - Nuxt UI のリファレンスにある Config を見るとデフォルトで `ui` prop に当たっている設定を確認できる
+
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
