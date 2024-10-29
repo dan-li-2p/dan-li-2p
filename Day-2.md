@@ -12,7 +12,7 @@
 
 ## アジェンダ
 
-- [ ] バックエンド API と Search API の VNET 統合
+- [x] バックエンド API と Search API の VNET 統合
 - [ ] バックエンド API で認証情報が取れることの確認・Static Web Apps バックエンドリンク
   - バックエンドと Search API との認証方法
 - [ ] フォーム画面実装
