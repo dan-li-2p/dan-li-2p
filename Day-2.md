@@ -178,7 +178,7 @@ SWA CLI を Codespace にインストール
 
 バックエンドコードを追加
 
-- コマンドパレット > `Codespaces: Add Dev Container Configuration Files...` から `Modify yourt active configuration` を選択し、Dotnet CLI を選択
+- コマンドパレット > `Codespaces: Add Dev Container Configuration Files...` から `Modify your active configuration` を選択し、Dotnet CLI を選択
 - コンテナをリビルド後、VS Code ターミナルで dotnet コマンドが実行できることを確認
 - backend ディレクトリを追加し、`dotnet new webapi` コマンドを実行し Web API ボイラープレートコードを生成
 - `dotnet run` コマンドでローカル起動し、`/weatherforecast` エンドポイントにアクセスできることを確認
