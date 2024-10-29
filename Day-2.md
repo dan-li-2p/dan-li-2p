@@ -162,3 +162,4 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 - [Config | Card - Nuxt UI](https://ui.nuxt.com/components/card#config)
 - [middleware/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/middleware)
 - [plugins/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/plugins)
+- [Documentation | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform)
