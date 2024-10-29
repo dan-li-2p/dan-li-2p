@@ -41,7 +41,7 @@
 
 ### アーキテクチャ
 
-<img width="700" alt="architecture" src="https://github.com/user-attachments/assets/f21261ec-84c2-4e43-8d4d-9cee33791d0c">
+<img width="700" alt="architecture" src="https://github.com/user-attachments/assets/e0888884-1c80-45fa-81cd-4ef0e1546be6">
 
 ### 環境の分け方について
 
