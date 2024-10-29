@@ -182,7 +182,13 @@ SWA CLI でフロントエンド・バックエンドをローカル起動
   - appDevserverUrl のポートを Nuxt Dev サーバーのポート (3000) に変更
   - apiDevserverUrl に .NET バックエンドの URL を設定
 - `swa start` コマンドで 4280 ポートが起動し、認証エミュレーターの画面が開くことを確認
-- 適当な Username を入力してログインすると、`<SWA CLI エミュレータのオリジン>/api/weatherforecast` にアクセスできることを確認
+- 適当な Username を入力してログインすると Nuxt アプリ画面が開き、`<SWA CLI エミュレータのオリジン>/api/weatherforecast` にアクセスできることを確認
+
+バックエンドで PUT エンドポイントを実装
+
+- `app.MapGet` を `app.MapPut` に変更し、path を `/api/weatherforecast` から `/api/procedures/{id}` に変更
+- 引数で id と body を受け取りレスポンスで返すよう実装
+- 詳細画面を開き保存ボタンを押下すると、PUT リクエストが成功してレスポンスで値が返ることを確認
 
 ## 参考ドキュメント
 
