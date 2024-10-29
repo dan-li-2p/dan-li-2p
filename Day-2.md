@@ -162,8 +162,17 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 
 ### ✅ SWA CLI でローカル環境での認証エミュレーション
 
+SWA CLI を Codespace にインストール
+
 - Dev Container の postCreateCommand に SWA CLI インストールコマンドを追加
-- コンテナをリビルド
+- コンテナをリビルド後、VS Code ターミナルで swa コマンドが実行できることを確認
+
+バックエンドコードを追加
+
+- コマンドパレット > `Codespaces: Add Dev Container Configuration Files...` から `Modify yourt active configuration` を選択し、Dotnet CLI を選択
+- コンテナをリビルド後、VS Code ターミナルで dotnet コマンドが実行できることを確認
+- backend ディレクトリを追加し、`dotnet new webapi` コマンドを実行し Web API ボイラープレートコードを生成
+- `dotnet run` コマンドでローカル起動し、`/weatherforecast` エンドポイントにアクセスできることを確認
 
 ## 参考ドキュメント
 
