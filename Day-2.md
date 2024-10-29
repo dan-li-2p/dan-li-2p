@@ -207,5 +207,7 @@ SWA CLI でフロントエンド・バックエンドをローカル起動
 - [middleware/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/middleware)
 - [plugins/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/plugins)
 - [Documentation | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform)
+- [Azure Static Web Apps のプレビュー環境で Microsoft Entra ID 認証を有効化する - しばやん雑記](https://blog.shibayan.jp/entry/20240108/1704679165)
+- [独自のバックエンドとリンクした Azure Static Web Apps のプレビュー環境を自動で作成する - しばやん雑記](https://blog.shibayan.jp/entry/20240302/1709354966)
 - [Static Web Apps CLI Documentation | Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/)
 - [Azure Static Web Apps でのユーザー情報へのアクセス | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/user-information)
