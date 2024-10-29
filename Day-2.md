@@ -118,6 +118,6 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
 - [アプリを Azure 仮想ネットワークと統合する - Azure App Service | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/app-service/overview-vnet-integration)
-- [middleware/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/middleware)
 - [Icon - Nuxt UI](https://ui.nuxt.com/components/icon)
 - [Config | Card - Nuxt UI](https://ui.nuxt.com/components/card#config)
+- [middleware/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/middleware)
