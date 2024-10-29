@@ -60,7 +60,10 @@ Azure ポータルで各リソースを作成・設定
   - OS は Linux を選択
   - リージョンは Japan East に設定 (VNET と同様にする必要あり)
   - App Service プラン (バックエンド API & Search API 共有用) を P0V3 で新規作成
-  - ゾーン冗長は無効に設定
+  - ゾーン冗長は無効に設定 (本番環境では SLA 上必要であれば有効化)
+  - ネットワーク設定はひとまずデフォルトにしておく
+  - Application Insights は無効に設定 (運用時には有効化)
+  - Microsoft Defender for Cloud は無効に設定 (コスパが良くないので基本無効で OK)
 
 ## 参考ドキュメント
 
