@@ -55,6 +55,10 @@
 - SWA プレビュー環境は環境ごとにオリジンが変わるが、認証用の Entra ID アプリの応答 URL はどう設定する？
   - 応答 URL にアスタリスクを設定できるが、通常 UI ではバリデーションが通らないため、マニフェスト編集画面で操作する必要がある
 
+### ローカル開発時の認証
+
+- SWA CLI で認証をエミュレーションできる
+
 ## 🔖 作業ログ
 
 ### ✅ バックエンド API と Search API の VNET 統合
@@ -156,6 +160,11 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
   - PUT リクエストの発行後に定義したイベントをエミットする
   - エミットされたイベントはコンポーネントの属性としてイベントハンドラーで受け取る
 
+### ✅ SWA CLI でローカル環境での認証エミュレーション
+
+- Dev Container の postCreateCommand に SWA CLI インストールコマンドを追加
+- コンテナをリビルド
+
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
@@ -165,3 +174,4 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 - [middleware/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/middleware)
 - [plugins/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/plugins)
 - [Documentation | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform)
+- [Static Web Apps CLI Documentation | Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/)
