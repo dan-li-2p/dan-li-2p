@@ -190,6 +190,13 @@ SWA CLI でフロントエンド・バックエンドをローカル起動
 - 引数で id と body を受け取りレスポンスで返すよう実装
 - 詳細画面を開き保存ボタンを押下すると、PUT リクエストが成功してレスポンスで値が返ることを確認
 
+バックエンド側での認証情報取得を試行
+
+- API 関数の引数に HTTPContext 型の context を追加
+- [ドキュメント](https://learn.microsoft.com/ja-jp/azure/static-web-apps/user-information) のサンプルコード通りに HTTP リクエストヘッダーの `x-ms-client-principal` の内容をパースするよう実装
+- パースした内容もレスポンスで返すよう実装
+- 詳細画面を開き保存ボタンを押下すると、PUT リクエストが成功してレスポンスで値が返ることを確認
+
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
@@ -200,3 +207,4 @@ SWA CLI でフロントエンド・バックエンドをローカル起動
 - [plugins/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/plugins)
 - [Documentation | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform)
 - [Static Web Apps CLI Documentation | Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/)
+- [Azure Static Web Apps でのユーザー情報へのアクセス | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/user-information)
