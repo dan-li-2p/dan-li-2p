@@ -90,7 +90,7 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
   - リソース名で バックエンド API の App Service リソースを選択
 - App Service (バックエンド API) の URL にブラウザからアクセスすると期待通り 400 エラーになることを確認
 
-### ✅ Nuxt
+### ✅ Nuxt の Q&A
 
 - 詳細と一覧を実装
   - Nuxt UI を使ってコンポーネントを実装
@@ -103,6 +103,11 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 - Nuxt コンポーネントのカスタマイズ
   - `ui` prop にオブジェクトを渡すことでオーバーライドが可能
   - Nuxt UI のリファレンスにある Config を見るとデフォルトで `ui` prop に当たっている設定を確認できる
+- Nuxt UI に `UIcon` コンポーネントがある
+  - Material Icons なども組み込みで利用できる
+  - 利用する Icon Set のみインストールするようにするとバンドルサイズを削減できる
+  - 色を変えるのは `UIcon` の `class` で変更
+  - Vue の場合は `:class` を使うと動的にバインディング可能
 
 ## 参考ドキュメント
 
