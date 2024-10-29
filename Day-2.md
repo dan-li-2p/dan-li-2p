@@ -12,6 +12,7 @@
 
 ## アジェンダ
 
+- [ ] バックエンドと Search API の VNET 統合
 - [ ] バックエンドで認証情報が取れることの確認・Static Web Apps バックエンドリンク
   - バックエンドと Search API との認証方法
 - [ ] フォーム画面実装
@@ -38,6 +39,20 @@
   - API キー認証
   - ログインユーザーの識別はパラメータで oid を引き渡して行う
 - ファイルアップロードツールはメンテナンスツールなので、VNET 内に配置
+
+### アーキテクチャ
+
+<img width="700" alt="architecture" src="https://github.com/user-attachments/assets/f21261ec-84c2-4e43-8d4d-9cee33791d0c">
+
+## 🔖 作業ログ
+
+### ✅ バックエンドと Search API の VNET 統合
+
+- Azure ポータルで VNET (仮想ネットワーク) を作成
+  - リージョンは Japan East に設定
+  - IP アドレスタブで Search API App Service 用のサブネットを作成
+    - アドレス範囲: `10.0.0.0/16`
+    - サイズ: `/24` (App Service を入れるには最低 27 bit 必要)
 
 ## 参考ドキュメント
 
