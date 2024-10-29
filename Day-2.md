@@ -117,6 +117,25 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
   - 親の `div` に対して `class=flex flex-col h-screen` を追加して縦積みを指定
   - `slot` には `class` を指定できないので `main` で囲んで `class=grow` を指定
 
+### ✅ Nuxt を利用してフォームを実装
+
+- ページコンポーネントで `useFetch` を行うか、コンポーネントで `useFetch` を行って props で渡すか
+  - コンポーネントのキャッシュがあるので、最近はページコンポーネントで `useFetch` を行う方が多い
+- `useFetch` で取ってきたデータをそのまま渡して書き換えるのではなく、更新用のデータを用意する
+  - `ref` を使って `useFetch` で取ってきたデータを書き換え可能にする
+  - `ref` には初期値が必要なので一旦 `undefined` を指定する
+  - `ref<Procedure | undefined>` のような Union 型を指定して警告を消す
+- 本来はページコンポーネントで `useFetch` を行った方が、コンポーネントでは値がある前提で進められてわかりやすい
+  - `undefined` 以外であることを保証するために `v-if` で条件を指定する
+- 表示のみ必要な場合は `procedure` を参照する
+  - `updateBy` や `updateAt` など
+- 「保存」ボタンが押された時の処理を追加する
+  - `@click` を指定して呼び出される処理を実装する
+  - コンソールにログを出力する処理だけを追加
+- 親のページコンポーネント側で `useFetch` を行うように変更する
+  - `Procedure` の型定義を別ファイルに切り出す
+  - `defineProps` を呼び出して、親から `Procedure` を受け取れるようにする
+
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
