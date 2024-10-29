@@ -8,7 +8,7 @@
 ## 事前準備
 
 - [x] Static Web Apps の Easy Auth 設定 (Entra ID)
-- [ ] procedure.json の拡充
+- [x] procedure.json の拡充
 - [ ] バックエンドで認証情報が取れることの確認・Static Web Apps バックエンドリンク
 
 ## アジェンダ
