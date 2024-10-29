@@ -113,6 +113,9 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
   - `middleware` ディレクトリを作成する
   - 強制的にリダイレクトを行うミドルウェアを作成
   - 該当のページで `definePageMeta` を使って利用するミドルウェアを参照する
+- フッターを Flex を使って実現する
+  - 親の `div` に対して `class=flex flex-col h-screen` を追加して縦積みを指定
+  - `slot` には `class` を指定できないので `main` で囲んで `class=grow` を指定
 
 ## 参考ドキュメント
 
@@ -121,3 +124,4 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 - [Icon - Nuxt UI](https://ui.nuxt.com/components/icon)
 - [Config | Card - Nuxt UI](https://ui.nuxt.com/components/card#config)
 - [middleware/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/middleware)
+- [plugins/ · Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/plugins)
