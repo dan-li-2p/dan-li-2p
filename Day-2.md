@@ -40,3 +40,4 @@
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
+- [アプリを Azure 仮想ネットワークと統合する - Azure App Service | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/app-service/overview-vnet-integration)
