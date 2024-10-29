@@ -19,3 +19,18 @@
   - プレビュー環境用に Entra ID の応答 URL をどう設定すれば良いか
 - [ ] ステージングスロットについて
 - [ ] [Optional] データ設計のディスカッション
+
+## ディスカッション
+
+### SWA バックエンドリンクとは？
+
+- SWA では基本静的アセットしかホストできない。バックエンド (API) のホストはオプション機能で、認証設定の統合が可能
+  - 標準ではマネージド Function (Azure Functions)
+  - バックエンドリンクで任意の App Service/Azure Functions/API Management/Container Apps リソースとリンクできる
+- バックエンドリンクを設定すると `/api` へのアクセスがリンクしたバックエンドにリバースプロキシされる
+  - フロントエンド・バックエンドを同一オリジンでホストできるため、Cookie ベースで認証が容易
+  - SWA 経由以外からはバックエンドを呼び出せなくなる
+
+## 参考ドキュメント
+
+- [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
