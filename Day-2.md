@@ -31,6 +31,12 @@
   - フロントエンド・バックエンドを同一オリジンでホストできるため、Cookie ベースで認証が容易
   - SWA 経由以外からはバックエンドを呼び出せなくなる
 
+### Search API の認証
+
+- SWA バックエンドから Search API を呼び出す
+  - 双方の App Service 間で VNET 統合を設定
+  - API キー認証
+
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
