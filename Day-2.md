@@ -52,7 +52,7 @@ Azure ポータルで各リソースを作成・設定
 
 - VNET (仮想ネットワーク) を作成
   - リージョンは Japan East に設定
-  - IP アドレスタブで App Service (Search API) 用のサブネットを作成
+  - IP アドレスタブで App Service 用のサブネットを作成
     - アドレス範囲: `10.0.0.0/16`
     - サイズ: `/24` (App Service を入れるには最低 27 bit 必要)
 - App Service (バックエンド API) を作成
@@ -60,10 +60,17 @@ Azure ポータルで各リソースを作成・設定
   - OS は Linux を選択
   - リージョンは Japan East に設定 (VNET と同様にする必要あり)
   - App Service プラン (バックエンド API & Search API 共有用) を P0V3 で新規作成
-  - ゾーン冗長は無効に設定 (本番環境では SLA 上必要であれば有効化)
+    - ゾーン冗長は無効に設定 (本番環境では SLA 上必要であれば有効化)
   - ネットワーク設定はひとまずデフォルトにしておく
   - Application Insights は無効に設定 (運用時には有効化)
   - Microsoft Defender for Cloud は無効に設定 (コスパが良くないので基本無効で OK)
+- App Service (バックエンド API) のネットワーク画面で VNET 統合を設定
+  - 送信トラフィックの構成 > 仮想ネットワーク統合 からVNET 統合を追加
+    - 先ほど作成した VNET とサブネットを選択
+    - 送信インターネットトラフィックを有効化 (Outbound トラフィックをすべて VNET 経由に制限)
+- App Service (Search API) を作成
+  - 初期設定はバックエンド API と同様
+  - App Service プランはバックエンド API と共有するよう設定
 
 ## 参考ドキュメント
 
