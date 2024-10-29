@@ -88,6 +88,7 @@ Azure ポータルで Static Web Apps に バックエンド API の App Service
 - Static Web Apps > API 画面で Production 環境のリンクを追加
   - バックエンドリソースの種類は Web アプリを選択
   - リソース名で バックエンド API の App Service リソースを選択
+- App Service (Search API) の URL にブラウザからアクセスすると期待通り 400 エラーになることを確認
 
 ## 参考ドキュメント
 
