@@ -12,8 +12,8 @@
 
 ## アジェンダ
 
-- [ ] バックエンドと Search API の VNET 統合
-- [ ] バックエンドで認証情報が取れることの確認・Static Web Apps バックエンドリンク
+- [ ] バックエンド API と Search API の VNET 統合
+- [ ] バックエンド API で認証情報が取れることの確認・Static Web Apps バックエンドリンク
   - バックエンドと Search API との認証方法
 - [ ] フォーム画面実装
 - [ ] 開発環境について (アクセス制限等)
@@ -29,7 +29,7 @@
   - 標準ではマネージド Function (Azure Functions)
   - バックエンドリンクで任意の App Service/Azure Functions/API Management/Container Apps リソースとリンクできる
 - バックエンドリンクを設定すると `/api` へのアクセスがリンクしたバックエンドにリバースプロキシされる
-  - フロントエンド・バックエンドを同一オリジンでホストできるため、Cookie ベースで認証が容易
+  - フロントエンド・バックエンド API を同一オリジンでホストできるため、Cookie ベースで認証が容易
   - SWA 経由以外からはバックエンドを呼び出せなくなる
 
 ### Search API/ファイルアップロードツールの認証
@@ -46,13 +46,21 @@
 
 ## 🔖 作業ログ
 
-### ✅ バックエンドと Search API の VNET 統合
+### ✅ バックエンド API と Search API の VNET 統合
 
-- Azure ポータルで VNET (仮想ネットワーク) を作成
+Azure ポータルで各リソースを作成・設定
+
+- VNET (仮想ネットワーク) を作成
   - リージョンは Japan East に設定
-  - IP アドレスタブで Search API App Service 用のサブネットを作成
+  - IP アドレスタブで App Service (Search API) 用のサブネットを作成
     - アドレス範囲: `10.0.0.0/16`
     - サイズ: `/24` (App Service を入れるには最低 27 bit 必要)
+- App Service (バックエンド API) を作成
+  - スタックは .NET 8 を選択
+  - OS は Linux を選択
+  - リージョンは Japan East に設定 (VNET と同様にする必要あり)
+  - App Service プラン (バックエンド API & Search API 共有用) を P0V3 で新規作成
+  - ゾーン冗長は無効に設定
 
 ## 参考ドキュメント
 
