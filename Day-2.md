@@ -81,6 +81,14 @@ Azure ポータルで各リソースを作成・設定
         - ソースの設定で仮想ネットワークを選択し、先ほど作成した VNET とサブネットを選択
 - App Service (Search API) の URL に VNET 外でブラウザからアクセスすると期待通り 403 エラーになることを確認
 
+### ✅ Static Web Apps バックエンドリンク
+
+Azure ポータルで Static Web Apps に バックエンド API の App Service をリンク
+
+- Static Web Apps > API 画面で Production 環境のリンクを追加
+  - バックエンドリソースの種類は Web アプリを選択
+  - リソース名で バックエンド API の App Service リソースを選択
+
 ## 参考ドキュメント
 
 - [Azure Static Web Apps での API サポートの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/static-web-apps/apis-overview)
